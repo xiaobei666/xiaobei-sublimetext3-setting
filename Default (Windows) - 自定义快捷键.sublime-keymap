@@ -1,0 +1,68 @@
+[
+	//=======================我的快捷键=======================//
+	// 删除当前行
+	{ "keys": ["ctrl+g"], "command":"run_macro_file", "args": {"file":"Packages/Default/Delete Line.sublime-macro"} },
+	// 复制选中行到行后
+	{ "keys": ["ctrl+alt+down"], "command":"duplicate_line" },
+	// 选词(按住-继续选择下个相同的字符串)
+	{ "keys": ["ctrl+d"], "command":"find_under_expand" },
+	// gb一次选中所有的
+	{ "keys": ["ctrl+g", "ctrl+b"],"command": "find_all_under" },
+
+	// 与上行互换
+	{ "keys": ["alt+up"], "command":"swap_line_up" },
+	// 与下行互换
+	{ "keys": ["alt+down"], "command":"swap_line_down" },
+	{ "keys": ["alt+/","alt+/"], "command":"insert_best_completion" },
+	//移动光标
+	{ "keys": ["alt+r"], "command": "move","args": {"by": "characters", "forward":true} },
+	{ "keys": ["alt+u"], "command": "move","args": {"by": "lines", "forward":false} },
+	{ "keys": ["alt+l"], "command": "move","args": {"by": "characters", "forward":false} },
+	{ "keys": ["alt+d"], "command": "move","args": {"by": "lines", "forward":true} },
+	{ "keys": ["shift+alt+l" ], "command":"move", "args": {"by": "characters","forward": false, "extend": true} },
+	{ "keys": ["shift+alt+r"], "command":"move", "args": {"by": "characters","forward": true, "extend": true} },
+	{ "keys": ["shift+alt+u" ], "command":"move", "args": {"by": "lines","forward": false, "extend": true} },
+	{ "keys": ["shift+alt+d" ], "command":"move", "args": {"by": "lines","forward": true, "extend": true} },
+	//移动光标到行首或行末
+	{ "keys": ["alt+b"], "command":"move_to", "args": {"to": "bol","extend": false} },
+	{ "keys": ["alt+e"], "command":"move_to", "args": {"to": "eol","extend": false} },
+	{ "keys": ["shift+alt+b"], "command":"move_to", "args": {"to": "bol","extend": true} },
+	{ "keys": ["shift+alt+e"], "command":"move_to", "args": {"to": "eol","extend": true} },
+	//滚屏
+	{ "keys": ["alt+g"], "command":"scroll_lines", "args": {"amount": 1.0 } },
+	{ "keys": ["alt+h"], "command":"scroll_lines", "args": {"amount": -1.0 } },
+	// css TAG格式化
+	{ "keys": ["ctrl+alt+c"], "command": "compact_expand_css", "args": { "action": "expand" }  },  // css 成列
+	{ "keys": ["ctrl+alt+h"], "command": "compact_expand_css", "args": { "action": "compact" } },	// css 成行
+	//XML 格式化
+	/*{ "keys": ["ctrl+alt+x"], "command": "tidy_xml_lint" },
+	{ "keys": ["ctrl+shift+j"], "command": "prettify_json" }*/
+
+    // 新建模板页
+	{
+        "keys": ["ctrl+alt+n","ctrl+alt+h"], "command": "sublime_tmpl",
+        "args": {"type": "html"}
+    }
+    ,{
+        "keys": ["ctrl+alt+n","ctrl+alt+j"], "command": "sublime_tmpl",
+        "args": {"type": "js"}
+    }
+    ,{
+        "keys": ["ctrl+alt+n","ctrl+alt+c"], "command": "sublime_tmpl",
+        "args": {"type": "css"}
+    }
+    ,{
+        "keys": ["ctrl+alt+n","ctrl+alt+p"], "command": "sublime_tmpl",
+        "args": {"type": "php"}
+    }
+    ,{
+        "keys": ["ctrl+alt+n","ctrl+alt++shift+p"], "command": "sublime_tmpl",
+        "args": {"type": "python"}
+    }
+    ,{
+        "keys": ["ctrl+alt+n","ctrl+alt+r"], "command": "sublime_tmpl",
+        "args": { "type": "ruby"}
+    }
+
+]
+

@@ -1,0 +1,6 @@
+2014-08-25 15:17:21
+Traceback (most recent call last):
+  File "/Users/wbond/Library/Application Support/Sublime Text 3/Packages/SVN/sublimesvn/threads.py", line 20, in run
+  File "/Users/wbond/Library/Application Support/Sublime Text 3/Packages/SVN/sublimesvn/status.py", line 552, in run_with_except
+  File "/Users/wbond/Library/Application Support/Sublime Text 3/Packages/SVN/sublimesvn/proc.py", line 945, in __init__
+TypeError: 'NoneType' does not support the buffer interface

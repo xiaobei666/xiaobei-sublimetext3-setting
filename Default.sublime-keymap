@@ -1,0 +1,118 @@
+[
+	{
+		"keys": ["alt+/", "alt+/"],
+		"command": "insert_best_completion"
+	},
+	{
+		"keys": ["alt+b"],
+		"command": "move_to", "args": {"extend": false, "to": "bol"}
+	},
+	{
+		"keys": ["alt+d"],
+		"command": "move", "args": {"forward": true, "by": "lines"}
+	},
+	{
+		"keys": ["alt+down"],
+		"command": "swap_line_down"
+	},
+	{
+		"keys": ["alt+e"],
+		"command": "move_to", "args": {"extend": false, "to": "eol"}
+	},
+	{
+		"keys": ["alt+g"],
+		"command": "scroll_lines", "args": {"amount": 1.0}
+	},
+	{
+		"keys": ["alt+h"],
+		"command": "scroll_lines", "args": {"amount": -1.0}
+	},
+	{
+		"keys": ["alt+l"],
+		"command": "move", "args": {"forward": false, "by": "characters"}
+	},
+	{
+		"keys": ["alt+r"],
+		"command": "move", "args": {"forward": true, "by": "characters"}
+	},
+	{
+		"keys": ["alt+u"],
+		"command": "move", "args": {"forward": false, "by": "lines"}
+	},
+	{
+		"keys": ["alt+up"],
+		"command": "swap_line_up"
+	},
+	{
+		"keys": ["ctrl+alt+c"],
+		"command": "compact_expand_css", "args": {"action": "expand"}
+	},
+	{
+		"keys": ["ctrl+alt+down"],
+		"command": "duplicate_line"
+	},
+	{
+		"keys": ["ctrl+alt+h"],
+		"command": "compact_expand_css", "args": {"action": "compact"}
+	},
+	{
+		"keys": ["ctrl+alt+n", "ctrl+alt++shift+p"],
+		"command": "sublime_tmpl", "args": {"type": "python"}
+	},
+	{
+		"keys": ["ctrl+alt+n", "ctrl+alt+c"],
+		"command": "sublime_tmpl", "args": {"type": "css"}
+	},
+	{
+		"keys": ["ctrl+alt+n", "ctrl+alt+h"],
+		"command": "sublime_tmpl", "args": {"type": "html"}
+	},
+	{
+		"keys": ["ctrl+alt+n", "ctrl+alt+j"],
+		"command": "sublime_tmpl", "args": {"type": "js"}
+	},
+	{
+		"keys": ["ctrl+alt+n", "ctrl+alt+p"],
+		"command": "sublime_tmpl", "args": {"type": "php"}
+	},
+	{
+		"keys": ["ctrl+alt+n", "ctrl+alt+r"],
+		"command": "sublime_tmpl", "args": {"type": "ruby"}
+	},
+	{
+		"keys": ["ctrl+d"],
+		"command": "find_under_expand"
+	},
+	{
+		"keys": ["ctrl+g"],
+		"command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"}
+	},
+	{
+		"keys": ["ctrl+g", "ctrl+b"],
+		"command": "find_all_under"
+	},
+	{
+		"keys": ["shift+alt+b"],
+		"command": "move_to", "args": {"extend": true, "to": "bol"}
+	},
+	{
+		"keys": ["shift+alt+d"],
+		"command": "move", "args": {"forward": true, "extend": true, "by": "lines"}
+	},
+	{
+		"keys": ["shift+alt+e"],
+		"command": "move_to", "args": {"extend": true, "to": "eol"}
+	},
+	{
+		"keys": ["shift+alt+l"],
+		"command": "move", "args": {"forward": false, "extend": true, "by": "characters"}
+	},
+	{
+		"keys": ["shift+alt+r"],
+		"command": "move", "args": {"forward": true, "extend": true, "by": "characters"}
+	},
+	{
+		"keys": ["shift+alt+u"],
+		"command": "move", "args": {"forward": false, "extend": true, "by": "lines"}
+	}
+]

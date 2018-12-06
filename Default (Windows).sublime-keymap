@@ -1,0 +1,150 @@
+[
+	{
+		"keys": ["alt+/"],
+		"command": "auto_complete"
+	},
+	{
+		"keys": ["alt+/"],
+		"command": "replace_completion_with_auto_complete",
+		"context": [
+			{"operator": "equal", "operand": false, "key": "auto_complete_visible"},
+			{"operator": "equal", "operand": "insert_best_completion", "key": "last_command"},
+			{"operator": "equal", "operand": true, "key": "setting.tab_completion"}
+		]
+	},
+	{
+		"keys": ["alt+/", "alt+/"],
+		"command": "insert_best_completion"
+	},
+	{
+		"keys": ["alt+b"],
+		"command": "move_to", "args": {"extend": false, "to": "bol"}
+	},
+	{
+		"keys": ["alt+d"],
+		"command": "move", "args": {"forward": true, "by": "lines"}
+	},
+	{
+		"keys": ["alt+down"],
+		"command": "swap_line_down"
+	},
+	{
+		"keys": ["alt+e"],
+		"command": "move_to", "args": {"extend": false, "to": "eol"}
+	},
+	{
+		"keys": ["alt+g"],
+		"command": "scroll_lines", "args": {"amount": 1.0}
+	},
+	{
+		"keys": ["alt+h"],
+		"command": "scroll_lines", "args": {"amount": -1.0}
+	},
+	{
+		"keys": ["alt+l"],
+		"command": "move", "args": {"forward": false, "by": "characters"}
+	},
+	{
+		"keys": ["alt+r"],
+		"command": "move", "args": {"forward": true, "by": "characters"}
+	},
+	{
+		"keys": ["alt+u"],
+		"command": "move", "args": {"forward": false, "by": "lines"}
+	},
+	{
+		"keys": ["alt+up"],
+		"command": "swap_line_up"
+	},
+	{
+		"keys": ["ctrl+alt+down"],
+		"command": "duplicate_line"
+	},
+	{
+		"keys": ["ctrl+g"],
+		"command": "find_under_expand"
+	},
+	{
+		"keys": ["ctrl+g", "ctrl+b"],
+		"command": "find_all_under"
+	},
+	{
+		"keys": ["shift+alt+b"],
+		"command": "move_to", "args": {"extend": true, "to": "bol"}
+	},
+	{
+		"keys": ["shift+alt+d"],
+		"command": "move", "args": {"forward": true, "extend": true, "by": "lines"}
+	},
+	{
+		"keys": ["shift+alt+e"],
+		"command": "move_to", "args": {"extend": true, "to": "eol"}
+	},
+	{
+		"keys": ["shift+alt+l"],
+		"command": "move", "args": {"forward": false, "extend": true, "by": "characters"}
+	},
+	{
+		"keys": ["shift+alt+r"],
+		"command": "move", "args": {"forward": true, "extend": true, "by": "characters"}
+	},
+	{
+		"keys": ["shift+alt+u"],
+		"command": "move", "args": {"forward": false, "extend": true, "by": "lines"}
+	},
+	{
+		"keys": ["shift+tab"],
+		"command": "insert_best_completion", "args": {"exact": true, "default": "\t"}
+	},
+	{
+		"keys": ["shift+tab"],
+		"command": "insert_best_completion", "args": {"exact": false, "default": "\t"},
+		"context": [
+			{"operator": "equal", "operand": true, "key": "setting.tab_completion"}
+		]
+	},
+	{
+		"keys": ["shift+tab"],
+		"command": "replace_completion_with_next_completion",
+		"context": [
+			{"operator": "equal", "operand": "insert_best_completion", "key": "last_command"},
+			{"operator": "equal", "operand": true, "key": "setting.tab_completion"}
+		]
+	},
+	{
+		"keys": ["shift+tab"],
+		"command": "reindent",
+		"context": [
+			{"operator": "regex_match", "match_all": true, "operand": "^$", "key": "following_text"},
+			{"operator": "regex_match", "match_all": true, "operand": "^$", "key": "preceding_text"},
+			{"operator": "equal", "match_all": true, "operand": true, "key": "selection_empty"},
+			{"operator": "equal", "operand": true, "key": "setting.auto_indent"}
+		]
+	},
+	{
+		"keys": ["shift+tab"],
+		"command": "indent",
+		"context": [
+			{"operator": "regex_contains", "operand": "\n", "key": "text"}
+		]
+	},
+	{
+		"keys": ["shift+tab"],
+		"command": "next_field",
+		"context": [
+			{"operator": "equal", "operand": true, "key": "has_next_field"}
+		]
+	},
+	{
+		"keys": ["shift+tab"],
+		"command": "commit_completion",
+		"context": [
+			{"key": "auto_complete_visible"},
+			{"key": "setting.auto_complete_commit_on_tab"}
+		]
+	},
+	{
+		"keys": ["shift+tab"],
+		"command": "unindent"
+	}
+]
