@@ -2,14 +2,21 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"PhpTidy",
+		"Prefixr",
+		"SFTP",
+		"Tag"
 	],
 	"installed_packages":
 	[
+		"A File Icon",
+		"Agila Theme",
 		"Alignment",
 		"All Autocomplete",
 		"AngularJS",
 		"AutoFileName",
 		"Autoprefixer",
+		"Boxy Theme",
 		"BracketHighlighter",
 		"Can I Use",
 		"ColorPick",
@@ -31,19 +38,19 @@
 		"LiveReload",
 		"LiveStyle",
 		"Package Control",
-		"Package Syncing",
 		"PackageSync",
 		"PhpTidy",
 		"Prefixr",
+		"SCSS",
 		"SFTP",
 		"SideBarEnhancements",
 		"SublimeREPL",
 		"SublimeTmpl",
 		"SVN",
-		"Sync Settings",
 		"SyncedSidebarBg",
 		"Tag",
 		"Terminal",
+		"TestRSpec",
 		"Theme - Aprosopo",
 		"Theme - Brogrammer",
 		"Theme - Flatland",
@@ -55,7 +62,6 @@
 		"Theme - Spacegray",
 		"TortoiseSVN",
 		"Trimmer",
-		"Vue Syntax Highlight",
-		"Vuetify"
+		"Vue Syntax Highlight"
 	]
 }

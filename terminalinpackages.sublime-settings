@@ -1,0 +1,4 @@
+{
+	"terminal": "iterm.sh",
+	"parameters": ["--open-in-tab"]
+}
